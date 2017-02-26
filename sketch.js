@@ -64,24 +64,14 @@ function draw() {
   ball_y = ball_y + ball_y_step;
 
   //draw ball
-  noStroke();
-  fill(255, 158, 194);
-  ellipse(ball_x, ball_y, ball_r * 2, ball_r * 2);
-  fill(255, 170, 202);
-  ellipse(ball_x, ball_y, ball_r + 8, ball_r + 8);
-  fill(255, 188, 213);
-  ellipse(ball_x, ball_y, ball_r + 6, ball_r + 6);
-  fill(255, 214, 229);
-  ellipse(ball_x, ball_y, ball_r + 4, ball_r + 4);
-  fill(255, 237, 243);
-  ellipse(ball_x, ball_y, ball_r + 1, ball_r + 1);
+    noStroke();
+    fill(196, 0, 0);
+    ellipse(ball_x, ball_y, ball_r * 2, ball_r * 2);
 
   // draw paddle
-  stroke(255);
-  fill(255);
-  rect(paddle_x, paddle_y, paddle_w, paddle_h);
-  fill(221, 239, 255);
-  rect(paddle_x+1, paddle_y+1, paddle_w-2, paddle_h-2);
+    stroke(24);
+    fill(64);
+    rect(paddle_x, paddle_y, paddle_w, paddle_h);
 
 strokeWeight(1);
 fill(221, 239, 255, 100);
@@ -218,13 +208,12 @@ fill(221, 239, 255, 100);
     text("~", 400, 40);
   }
   
-  
-//game over  
+    
   if (lives==0){
     stroke(0);
     fill(15, 84, 196, 100);
     background(255);
-    text("You lose, sucker.", height/2, width/2);
+    text("You lose, sucker.");
     reset();
   }
 
