@@ -1,10 +1,6 @@
-/* *
- * Aileen Lian <al7168@bard.edu>
- * IDEA 135
- * Sketch 8: p5 pong
- * I worked alone on this assigment with assistance from Keith O'Hara's base code. 
- * The rain effect on the page is from the following source: 
- * In creating this game, I focused on the aesthetics and attempted to create a crisp, clean space of gameplay. 
+/* 
+  Maeve Potter <mp0000@bard.edu>
+ I worked alone.
  */
 
 var paddle_x, paddle_y;
@@ -91,43 +87,43 @@ strokeWeight(1);
 fill(221, 239, 255, 100);
     
 //score change
-  if (frameCount==600){
+  if (frameCount==300){
     score=10;
   }
   
-  if (frameCount==1200){
+  if (frameCount==600){
     score=20;
   }
   
-  if (frameCount==1800){
+  if (frameCount==1200){
     score=30;
   }
   
-  if (frameCount==2400){
+  if (frameCount==1800){
     score=40;
   }
   
-  if (frameCount==3000){
+  if (frameCount==2400){
     score=50;
   }
   
-  if (frameCount==3600){
+  if (frameCount==3000){
     score=60;
   }
   
-  if (frameCount==4200){
+  if (frameCount==3600){
     score=70;
   }
   
-   if (frameCount==4800){
+   if (frameCount==4200){
     score=80;
   }
   
-   if (frameCount==5400){
+   if (frameCount==4800){
     score=90;
   }
   
-   if (frameCount==6000){
+   if (frameCount==5400){
     score=100;
   }
   
@@ -137,31 +133,47 @@ fill(221, 239, 255, 100);
     noStroke();
   if (score==0){
     color(255, 255, 255, 60);
-    text("points: 0", 40, 40);
+    text("Score: 0", 40, 40);
   }
   
   if (score==10){
-    text("points: 10", 40, 40);
+    text("Score: 10", 40, 40);
   }
   
   if (score==20){
-    text("points: 20", 40, 40);
+    text("Score: 20", 40, 40);
   }
   
   if (score==30){
-    text("points: 30", 40, 40);
+    text("Score: 30", 40, 40);
   }
   
   if (score==40){
-    text("points: 40", 40, 40);
+    text("Score: 40", 40, 40);
   }
   
     if (score==50){
-    text("points: 50", 40, 40);
+    text("Score: 50", 40, 40);
   }
   
    if (score==60){
-    text("points: 60", 40, 40);
+    text("Score: 60", 40, 40);
+  }
+  
+  if (score==70){
+    text("Score: 70", 40, 40);
+  }
+  
+  if (score==80){
+    text("Score: 80", 40, 40);
+  }
+  
+  if (score==90){
+    text("Score: 90", 40, 40);
+  }
+  
+  if (score==100){
+    text("Score: 100", 40, 40);
   }
   
   
@@ -182,33 +194,28 @@ fill(221, 239, 255, 100);
   if (lives==5){
     noStroke();
     color(255, 255, 255, 100);
-    text("♡♡♡♡♡", 400, 40);
+    text("~~~~~", 400, 40);
   }
   
     if (lives==4){
     noStroke();
-    text("♡♡♡♡", 400, 40);
+    text("~~~~", 400, 40);
   }
   
     if (lives==3){
     noStroke();
-    text("♡♡♡", 400, 40);
+    text("~~~", 400, 40);
       
-  }
-  
-    if (lives==3){
-    noStroke();
-    text("♡♡♡", 400, 40);
   }
   
     if (lives==2){
     noStroke();
-    text("♡♡", 400, 40);
+    text("~~", 400, 40);
   }
   
     if (lives==1){
     noStroke();
-    text("♡", 400, 40);
+    text("~", 400, 40);
   }
   
   
@@ -217,7 +224,7 @@ fill(221, 239, 255, 100);
     stroke(0);
     fill(15, 84, 196, 100);
     background(255);
-    text("GAME OVER. REFRESH TO BEGIN AGAIN.", height/2, width/2);
+    text("You lose, sucker.", height/2, width/2);
     reset();
   }
 
