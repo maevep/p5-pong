@@ -66,6 +66,7 @@ function draw() {
   //draw ball
     noStroke();
     fill(43, 159, 161);
+    ellipse(ball_x, ball_y, ball_r * 3, ball_r * 3);
     ellipse(ball_x, ball_y, ball_r * 2, ball_r * 2);
 
   // draw paddle
