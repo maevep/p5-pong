@@ -70,7 +70,7 @@ function draw() {
 
   // draw paddle
     stroke(24);
-    fill(64);
+    fill(60);
     rect(paddle_x, paddle_y, paddle_w, paddle_h);
 
 strokeWeight(1);
