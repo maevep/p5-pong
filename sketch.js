@@ -290,14 +290,7 @@ fill(221, 239, 255, 100);
   }
   
     
-  if (lives==0){
-    stroke(0);
-    fill(15, 84, 196, 100);
-    background(255);
-    text("You lose, sucker.");
-    reset();
-  }
-
+ 
   
   if (ball_y + ball_r > paddle_y){
     noStroke();
