@@ -289,8 +289,14 @@ fill(221, 239, 255, 100);
     text("~", 400, 40);
   }
   
-    
- 
+ if (lives==0){
+    stroke(0);
+    fill(15, 84, 196, 100);
+    background(255);
+    text("GAME OVER. REFRESH TO BEGIN AGAIN.", height/2, width/2);
+    reset();
+  }
+
   
   if (ball_y + ball_r > paddle_y){
     noStroke();
@@ -319,5 +325,4 @@ function keyPressed() {
 function keyReleased() {
   paddle_step = 0;
 }
-
 
