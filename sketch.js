@@ -76,7 +76,7 @@ function draw() {
 strokeWeight(1);
 fill(221, 239, 255, 100);
     
-//score change
+//score
   if (frameCount==300){
     score=10;
   }
@@ -85,36 +85,76 @@ fill(221, 239, 255, 100);
     score=20;
   }
   
-  if (frameCount==1200){
+  if (frameCount==900){
     score=30;
   }
   
-  if (frameCount==1800){
+  if (frameCount==1200){
     score=40;
   }
   
-  if (frameCount==2400){
+  if (frameCount==1500){
     score=50;
   }
   
-  if (frameCount==3000){
+  if (frameCount==1800){
     score=60;
   }
   
-  if (frameCount==3600){
+  if (frameCount==2100){
     score=70;
   }
   
-   if (frameCount==4200){
+   if (frameCount==2400){
     score=80;
   }
   
-   if (frameCount==4800){
+   if (frameCount==2700){
     score=90;
   }
   
-   if (frameCount==5400){
+   if (frameCount==3000){
     score=100;
+  }
+  
+   if (frameCount==3300){
+    score=110;
+  }
+  
+  if (frameCount==3600){
+    score=120;
+  }
+  
+  if (frameCount==3900){
+    score=130;
+  }
+  
+  if (frameCount==4200){
+    score=140;
+  }
+  
+  if (frameCount==4500){
+    score=150;
+  }
+  
+  if (frameCount==4800){
+    score=160;
+  }
+  
+  if (frameCount==5100){
+    score=170;
+  }
+  
+   if (frameCount==5400){
+    score=80;
+  }
+  
+   if (frameCount==5700){
+    score=190;
+  }
+  
+   if (frameCount==6000){
+    score=200;
   }
   
   
@@ -127,42 +167,82 @@ fill(221, 239, 255, 100);
   }
   
   if (score==10){
-    text("Score: 10", 40, 40);
+    text("Score: 5", 40, 40);
   }
   
   if (score==20){
-    text("Score: 20", 40, 40);
+    text("Score: 10", 40, 40);
   }
   
   if (score==30){
-    text("Score: 30", 40, 40);
+    text("Score: 15", 40, 40);
   }
   
   if (score==40){
-    text("Score: 40", 40, 40);
+    text("Score: 20", 40, 40);
   }
   
     if (score==50){
-    text("Score: 50", 40, 40);
+    text("Score: 25", 40, 40);
   }
   
    if (score==60){
-    text("Score: 60", 40, 40);
+    text("Score: 30", 40, 40);
   }
   
   if (score==70){
-    text("Score: 70", 40, 40);
+    text("Score: 35", 40, 40);
   }
   
   if (score==80){
-    text("Score: 80", 40, 40);
+    text("Score: 40", 40, 40);
   }
   
   if (score==90){
-    text("Score: 90", 40, 40);
+    text("Score: 45", 40, 40);
   }
   
   if (score==100){
+    text("Score: 50", 40, 40);
+  }
+  
+    if (score==110){
+    text("Score: 55", 40, 40);
+  }
+  
+  if (score==120){
+    text("Score: 60", 40, 40);
+  }
+  
+  if (score==130){
+    text("Score: 65", 40, 40);
+  }
+  
+  if (score==140){
+    text("Score: 70", 40, 40);
+  }
+  
+    if (score==150){
+    text("Score: 75", 40, 40);
+  }
+  
+   if (score==160){
+    text("Score: 80", 40, 40);
+  }
+  
+  if (score==170){
+    text("Score: 85", 40, 40);
+  }
+  
+  if (score==180){
+    text("Score: 90", 40, 40);
+  }
+  
+  if (score==190){
+    text("Score: 95", 40, 40);
+  }
+  
+  if (score==200){
     text("Score: 100", 40, 40);
   }
   
